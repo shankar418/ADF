@@ -1,0 +1,9 @@
+{
+	"name": "ADFPractice-GIt",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f16f6f3c-05cf-4638-ab88-b0dda89127c8",
+		"tenantId": "c8706ff6-ccf5-4aac-bee3-9a1580a6e958"
+	}
+}
