@@ -1,0 +1,36 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_DB_output",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Sno",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StdName",
+				"type": "varchar"
+			},
+			{
+				"name": "StdId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StdFee",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "file2"
+		}
+	}
+}
