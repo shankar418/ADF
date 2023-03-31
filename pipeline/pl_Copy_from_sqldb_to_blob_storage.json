@@ -4,7 +4,7 @@
 		"description": "Pipeline to copy the data from SQL Db to Blob storage.",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy data2",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
