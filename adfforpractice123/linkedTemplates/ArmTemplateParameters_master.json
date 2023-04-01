@@ -14,6 +14,9 @@
 		"Ls_DB_output_connectionString": {
 			"value": ""
 		},
+		"LS_SQLDB_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
