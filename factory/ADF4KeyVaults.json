@@ -1,0 +1,9 @@
+{
+	"name": "ADF4KeyVaults",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b000966c-4122-4127-94a9-fba9032038b5",
+		"tenantId": "c8706ff6-ccf5-4aac-bee3-9a1580a6e958"
+	}
+}
