@@ -90,6 +90,11 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
+				"variables": {
+					"username": {
+						"type": "String"
+					}
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -215,6 +220,49 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/LS_Blob_KV')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Web_Activity_to_read_secrets_from_Azure_keyVault')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "Web_Activity_to_read_secrets_from_Azure_keyVault",
+				"activities": [
+					{
+						"name": "Read_Token_from_Azure_KeyVault",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": "https://keyvault4adf.vault.azure.net/secrets/username/528c6c5872c242619cbc865ecc19398c?api-version=7.0",
+							"method": "GET",
+							"headers": {},
+							"authentication": {
+								"type": "MSI",
+								"resource": "https://vault.azure.net"
+							}
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {},
+					"cancelAfter": {}
+				},
+				"variables": {
+					"username": {
+						"type": "String"
+					}
+				},
+				"annotations": []
+			},
+			"dependsOn": []
 		}
 	]
 }
