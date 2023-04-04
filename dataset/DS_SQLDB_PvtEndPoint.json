@@ -1,0 +1,31 @@
+{
+	"name": "DS_SQLDB_PvtEndPoint",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLDB_PvtEndPoint",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SNo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "empdetails"
+		}
+	}
+}
