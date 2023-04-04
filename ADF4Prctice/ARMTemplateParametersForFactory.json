@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF4Prctice"
+		},
+		"LS_Blob_connectionString": {
+			"value": ""
+		},
+		"LS_SQLDB_PvtEndPoint_connectionString": {
+			"value": ""
+		},
+		"BlobPvtEndPoint_properties_privateLinkResourceId": {
+			"value": "/subscriptions/a3863a3c-c5e8-4e9e-ac98-72988254b90f/resourceGroups/ADF-Practice/providers/Microsoft.Storage/storageAccounts/blob4adf"
+		},
+		"BlobPvtEndPoint_properties_groupId": {
+			"value": "blob"
+		},
+		"BlobPvtEndPoint_properties_fqdns": {
+			"value": [
+				"blob4adf.blob.core.windows.net"
+			]
+		},
+		"SQLDB_PvtEndPoint_properties_privateLinkResourceId": {
+			"value": "/subscriptions/a3863a3c-c5e8-4e9e-ac98-72988254b90f/resourceGroups/ADF-Practice/providers/Microsoft.Sql/servers/sqlservershankar"
+		},
+		"SQLDB_PvtEndPoint_properties_groupId": {
+			"value": "sqlServer"
+		},
+		"SQLDB_PvtEndPoint_properties_fqdns": {
+			"value": [
+				"sqlservershankar.database.windows.net"
+			]
+		}
+	}
+}
