@@ -1,0 +1,9 @@
+{
+	"name": "ADF4Prctice",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "553ed885-3b36-4110-87f5-e3e173040a35",
+		"tenantId": "c8706ff6-ccf5-4aac-bee3-9a1580a6e958"
+	}
+}
