@@ -1,0 +1,7 @@
+{
+	"name": "SelfHostedIR",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Self Hosted Integration Runtime copy the data from Om-Premises to Azure Cloud"
+	}
+}

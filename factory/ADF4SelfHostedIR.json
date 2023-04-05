@@ -1,0 +1,9 @@
+{
+	"name": "ADF4SelfHostedIR",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5082d6f8-0192-4d7b-89b2-81bc7800cf67",
+		"tenantId": "c8706ff6-ccf5-4aac-bee3-9a1580a6e958"
+	}
+}
