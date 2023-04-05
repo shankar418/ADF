@@ -1,0 +1,17 @@
+{
+	"name": "LS_OnPrem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "//SHANKAR/Users/SHANKAR/Desktop/StudentData",
+			"userId": "SHANKAR",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5YzYzNzVjMy0yNTU4LTRiMjgtYWNmMy1lODZiYTA2YTM2NmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
